@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Política de privacidad de NetLabMT</title>
+<style>
+  :root {
+    color-scheme: light dark;
+    --fondo: #ffffff;
+    --tinta: #14212b;
+    --suave: #55707f;
+    --borde: #d8e3ea;
+    --acento: #0b6e90;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --fondo: #03111d;
+      --tinta: #e7faff;
+      --suave: #9db6c4;
+      --borde: #12354b;
+      --acento: #39d5ff;
+    }
+  }
+  body {
+    margin: 0 auto;
+    padding: 2.5rem 1.25rem 4rem;
+    max-width: 42rem;
+    background: var(--fondo);
+    color: var(--tinta);
+    font: 1rem/1.65 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  }
+  h1 { font-size: 1.75rem; line-height: 1.2; margin: 0 0 0.25rem; }
+  h2 { font-size: 1.15rem; margin: 2rem 0 0.5rem; }
+  .fecha { color: var(--suave); margin: 0 0 2rem; font-size: 0.9rem; }
+  .clave {
+    border: 1px solid var(--borde);
+    border-left: 3px solid var(--acento);
+    border-radius: 0.5rem;
+    padding: 1rem 1.15rem;
+    margin: 1.5rem 0;
+  }
+  ul { padding-left: 1.25rem; }
+  li { margin: 0.35rem 0; }
+  code {
+    font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+    font-size: 0.9em;
+  }
+  footer {
+    margin-top: 3rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--borde);
+    color: var(--suave);
+    font-size: 0.9rem;
+  }
+</style>
+</head>
+<body>
+
+<h1>Política de privacidad de NetLabMT</h1>
+<p class="fecha">Última actualización: 11 de agosto de 2026</p>
+
+<div class="clave">
+  <strong>NetLabMT no recopila, almacena ni transmite ningún dato personal.</strong>
+  La aplicación funciona por completo dentro del dispositivo y ni siquiera pide
+  el permiso de acceso a Internet, de modo que no puede enviar información a
+  ninguna parte.
+</div>
+
+<h2>Qué datos se recogen</h2>
+<p>
+  Ninguno. NetLabMT no pide nombre, correo, teléfono, ubicación, contactos,
+  fotos ni identificadores del dispositivo. No hay cuenta de usuario ni registro
+  de ningún tipo.
+</p>
+
+<h2>Qué se guarda en el dispositivo</h2>
+<p>
+  La aplicación guarda únicamente lo que usted crea con ella:
+</p>
+<ul>
+  <li>Los laboratorios de red simulados: equipos, cables y su configuración.</li>
+  <li>Las preferencias de la interfaz, como el tema y la disposición de los paneles.</li>
+</ul>
+<p>
+  Esos archivos viven en el almacenamiento privado de la aplicación, al que
+  ninguna otra aplicación tiene acceso. No se sincronizan ni se envían a ningún
+  servidor. Se eliminan por completo al desinstalar NetLabMT, y también pueden
+  borrarse uno a uno desde la propia aplicación.
+</p>
+
+<h2>Permisos</h2>
+<p>
+  NetLabMT no declara <code>android.permission.INTERNET</code> ni ningún otro
+  permiso sensible. Puede comprobarlo usted mismo sobre el paquete instalado:
+</p>
+<ul>
+  <li>Ajustes de Android → Aplicaciones → NetLabMT → Permisos.</li>
+  <li>O bien <code>adb shell dumpsys package ar.com.mt0.netlabmt</code>.</li>
+</ul>
+<p>
+  Las redes que se ven en la aplicación son simuladas. NetLabMT no abre sockets,
+  no analiza la red real del dispositivo y no modifica su configuración.
+</p>
+
+<h2>Publicidad y analítica</h2>
+<p>
+  La aplicación no incluye anuncios, ni analítica, ni informes de fallos, ni
+  bibliotecas de terceros que recojan información sobre su uso.
+</p>
+
+<h2>Menores</h2>
+<p>
+  NetLabMT es una herramienta educativa de contenido técnico. Como no recoge
+  datos de nadie, tampoco recoge datos de menores.
+</p>
+
+<h2>Cambios en esta política</h2>
+<p>
+  Si alguna versión futura necesitara recoger algún dato, esta política se
+  actualizaría antes de publicarla y el cambio se detallaría en las notas de la
+  versión. Mientras el texto diga lo que dice hoy, no se recoge nada.
+</p>
+
+<h2>Contacto</h2>
+<p>
+  Para cualquier consulta sobre esta política: <strong>tagliaferromauricio@gmail.com</strong>
+</p>
+
+<footer>
+  NetLabMT · <code>ar.com.mt0.netlabmt</code> · MT0
+</footer>
+
+</body>
+</html>
