@@ -58,66 +58,108 @@
 <body>
 
 <h1>Política de privacidad de NetLabMT</h1>
-<p class="fecha">Última actualización: 11 de agosto de 2026</p>
+<p class="fecha">Última actualización: 13 de agosto de 2026</p>
 
+<p>
+  NetLabMT es un simulador de redes que funciona por completo dentro del
+  dispositivo. Las topologías que creás se editan y se guardan localmente. La
+  aplicación usa analítica de uso anónima para entender cómo se utiliza y
+  mejorarla. Esta política describe qué datos maneja la aplicación y cómo se
+  usan.
+</p>
+
+<h2>Datos que se guardan en tu dispositivo</h2>
+<ul>
+  <li>
+    <strong>Laboratorios que vos creás</strong> — las topologías, la
+    configuración de cada equipo y las capturas que exportes se guardan
+    únicamente en el almacenamiento local del dispositivo. No se suben a
+    ningún servidor.
+  </li>
+  <li>
+    <strong>Preferencias de la aplicación</strong> — el tema, el idioma y la
+    disposición de los paneles se almacenan sólo en el dispositivo.
+  </li>
+</ul>
+
+<h2>Analítica de uso (Firebase Analytics)</h2>
+<p>
+  La aplicación usa <strong>Google Firebase Analytics</strong> para recopilar
+  estadísticas de uso <strong>anónimas y agregadas</strong>, con el único fin
+  de entender cómo se utiliza la aplicación y mejorarla. Esto puede incluir:
+</p>
+<ul>
+  <li>Eventos de uso como la apertura de la aplicación y la frecuencia de uso.</li>
+  <li>
+    Información técnica y de diagnóstico del dispositivo: modelo, versión de
+    Android, idioma, región o país y un identificador de instalación generado
+    por Firebase.
+  </li>
+</ul>
+<p>
+  Estos datos son procesados por Google como proveedor de este servicio.
+  <strong>No recopilamos tu nombre, tu correo, tu ubicación precisa ni el
+  contenido de tus laboratorios.</strong> Para más información sobre cómo
+  Google trata estos datos, consultá la
+  <a href="https://firebase.google.com/support/privacy">Política de Privacidad
+  de Firebase</a> y la
+  <a href="https://policies.google.com/privacy">Política de Privacidad de
+  Google</a>.
+</p>
+
+<h2>Datos que NO recopilamos</h2>
+<p>
+  No recopilamos ni compartimos datos personales identificables, ni el
+  contenido de tus laboratorios. La aplicación no muestra publicidad. La única
+  recopilación de datos es la analítica de uso anónima descrita arriba.
+</p>
+
+<h2>Acceso a la red</h2>
+<p>
+  La aplicación solicita el permiso de Internet exclusivamente para enviar los
+  eventos de analítica de uso anónima a Firebase. Tus laboratorios nunca se
+  transmiten.
+</p>
 <div class="clave">
-  <strong>NetLabMT no recopila, almacena ni transmite ningún dato personal.</strong>
-  La aplicación funciona por completo dentro del dispositivo y ni siquiera pide
-  el permiso de acceso a Internet, de modo que no puede enviar información a
-  ninguna parte.
+  Las redes que se ven dentro de NetLabMT son <strong>simuladas</strong>. El
+  motor no abre conexiones para representar a los equipos, no analiza la red
+  real del dispositivo y no modifica su configuración: todo el tráfico que
+  aparece en pantalla existe únicamente dentro de la simulación.
 </div>
 
-<h2>Qué datos se recogen</h2>
-<p>
-  Ninguno. NetLabMT no pide nombre, correo, teléfono, ubicación, contactos,
-  fotos ni identificadores del dispositivo. No hay cuenta de usuario ni registro
-  de ningún tipo.
-</p>
-
-<h2>Qué se guarda en el dispositivo</h2>
-<p>
-  La aplicación guarda únicamente lo que usted crea con ella:
-</p>
+<h2>Permisos del sistema</h2>
 <ul>
-  <li>Los laboratorios de red simulados: equipos, cables y su configuración.</li>
-  <li>Las preferencias de la interfaz, como el tema y la disposición de los paneles.</li>
+  <li><code>INTERNET</code> — necesario para enviar la analítica de uso anónima a Firebase.</li>
+  <li><code>ACCESS_NETWORK_STATE</code> — lo usa Firebase para saber si conviene enviar los eventos.</li>
+  <li><code>WAKE_LOCK</code>, identificador de publicidad y permisos de AdServices — los declara la propia biblioteca de Firebase.</li>
 </ul>
 <p>
-  Esos archivos viven en el almacenamiento privado de la aplicación, al que
-  ninguna otra aplicación tiene acceso. No se sincronizan ni se envían a ningún
-  servidor. Se eliminan por completo al desinstalar NetLabMT, y también pueden
-  borrarse uno a uno desde la propia aplicación.
+  La aplicación no solicita permisos de ubicación, cámara, contactos ni
+  almacenamiento externo. Los laboratorios se guardan en el directorio privado
+  de la propia aplicación.
 </p>
 
-<h2>Permisos</h2>
+<h2>Conservación y eliminación de datos</h2>
 <p>
-  NetLabMT no declara <code>android.permission.INTERNET</code> ni ningún otro
-  permiso sensible. Puede comprobarlo usted mismo sobre el paquete instalado:
-</p>
-<ul>
-  <li>Ajustes de Android → Aplicaciones → NetLabMT → Permisos.</li>
-  <li>O bien <code>adb shell dumpsys package ar.com.mt0.netlabmt</code>.</li>
-</ul>
-<p>
-  Las redes que se ven en la aplicación son simuladas. NetLabMT no abre sockets,
-  no analiza la red real del dispositivo y no modifica su configuración.
+  Los datos de analítica se transmiten cifrados (HTTPS/TLS) y Google los
+  conserva según las políticas de retención de Firebase Analytics. No vendemos
+  ni compartimos tus datos con terceros con fines publicitarios. Podés
+  solicitar la eliminación de los datos de analítica asociados a tu instalación
+  escribiendo a <strong>tagliaferromauricio@gmail.com</strong>; también podés
+  desvincularlos desinstalando la aplicación. Los laboratorios guardados en el
+  dispositivo se eliminan al borrarlos desde la aplicación o al desinstalarla.
 </p>
 
-<h2>Publicidad y analítica</h2>
+<h2>Menores de edad</h2>
 <p>
-  La aplicación no incluye anuncios, ni analítica, ni informes de fallos, ni
-  bibliotecas de terceros que recojan información sobre su uso.
-</p>
-
-<h2>Menores</h2>
-<p>
-  NetLabMT es una herramienta educativa de contenido técnico. Como no recoge
-  datos de nadie, tampoco recoge datos de menores.
+  La aplicación no está dirigida específicamente a menores y no recopila datos
+  personales identificables de ningún usuario, con independencia de su edad.
 </p>
 
 <h2>Contacto</h2>
 <p>
-  Para cualquier consulta sobre esta política: <strong>tagliaferromauricio@gmail.com</strong>
+  Ante cualquier consulta sobre esta política, podés escribir a:
+  <strong>tagliaferromauricio@gmail.com</strong>
 </p>
 
 <footer>
